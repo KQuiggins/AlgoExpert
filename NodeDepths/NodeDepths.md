@@ -1,4 +1,4 @@
-## Explanation of the code
+# Explanation of the code
 
 The code is a implementation of a function `nodeDepths` that calculates the sum of the depths of all the nodes in a binary tree. The binary tree is represented using a custom `BinaryTree` class.
 
@@ -7,7 +7,6 @@ def nodeDepths(root):
     sum = 0
     return nodeDepthHelper(root, sum)
 ```
-
 
 The nodeDepths function takes in the root of the binary tree and calls the nodeDepthHelper function to calculate the sum of the depths of all the nodes in the binary tree.
 
