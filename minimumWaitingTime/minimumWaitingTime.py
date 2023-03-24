@@ -6,4 +6,8 @@ def minimumWaitingTime(queries):
         duration = queries[i]
         queriesLeft = len(queries) - (i + 1)
         totalWaitingTime += duration * queriesLeft
+        print(totalWaitingTime,  duration, queriesLeft )
     return totalWaitingTime
+
+queries = [3, 2, 1, 2, 6]
+print(minimumWaitingTime(queries))
