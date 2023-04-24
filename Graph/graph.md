@@ -124,4 +124,3 @@ The following code performs a breadth-first search on the graph, starting at ver
 print(graph.bfs("A"))
 
 ```
-
