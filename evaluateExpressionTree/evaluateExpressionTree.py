@@ -8,19 +8,19 @@ class BinaryTree:
 def evaluateExpressionTree(tree):
     if tree.value >= 0:
         return tree.value
-    
-    left = evaluateExpressionTree(tree.left)
-    right = evaluateExpressionTree(tree.right)
+
+    leftValue = evaluateExpressionTree(tree.left)
+    rightValue = evaluateExpressionTree(tree.right)
 
     if tree.value == -1:
-        return left + right
+        return leftValue + rightValue
     if tree.value == -2:
-        return left - right
+        return leftValue - rightValue
     if tree.value == -3:
-        return int(left / right)
-    
-   
-    return left * right
+        return int(leftValue / rightValue)
+
+
+    return leftValue * rightValue
 
 
 # O(n) time | O(h) space
